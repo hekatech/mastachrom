@@ -1,0 +1,62 @@
+.status {
+	padding: 1.5em 2.5em;
+}
+
+.detailed-status {
+	padding: 1em 2em;
+}
+
+.status__content__read-more-button {
+	font-size: 14px;
+	padding: 14px 0 0;
+}
+
+.reply-indicator__content p,
+.status__content p,
+.reply-indicator__content,
+.status__content {
+	white-space: normal;
+	text-align: justify;
+	line-height: 1.5em;
+	word-break: break-word !important;
+}
+
+.detailed-status .status__content {
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+.status__action-bar {
+	justify-content: flex-start;
+	gap: 1em;
+}
+
+.display-name__account,
+.notification__message, 
+.status__prepend {
+	font-size: 14px;
+}
+
+.notification__message, 
+.status__prepend {
+	margin-bottom: -6px;
+	padding-left: 2em;
+}
+
+.status__info {
+	align-items: flex-start;
+}
+
+.status__relative-time {
+	font-size: 14px;
+	padding-top: 1px;
+}
+
+.column-link--logo {
+	padding: 8px 15px 0 15px;
+	margin-bottom: -3px;
+}
+
+.link-footer {
+	font-size: 12px;
+}
