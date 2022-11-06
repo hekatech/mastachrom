@@ -1,9 +1,9 @@
 .status {
-	padding: 1.5em 2.5em;
+	padding: 1.5em 2em 1.5em 2.5em;
 }
 
 .detailed-status {
-	padding: 1em 2em;
+	padding: 1em 1.8em 1em 2.5em;
 }
 
 .status__content__read-more-button {
@@ -15,10 +15,9 @@
 .status__content p,
 .reply-indicator__content,
 .status__content {
-	white-space: normal;
-	text-align: justify;
 	line-height: 1.5em;
-	word-break: break-word !important;
+	display: block;
+	word-break: break-word;
 }
 
 .detailed-status .status__content {
