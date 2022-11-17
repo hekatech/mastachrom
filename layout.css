@@ -74,7 +74,7 @@
 	padding: 1.5em 0.8em 1em 5.3em;
 }
 .detailed-status {
-	padding: 1.5em 0.8em 1em 2em;
+	padding: 1.5em 1em 1em 1em;
 }
 
 .status__avatar {
@@ -96,7 +96,7 @@
 	flex-grow: 100;
 }
 .columns-area__panels__pane--navigational {
-	width: 10px;
+	width: 5px;
 	min-width: 0;
 	flex-shrink: 0;
 	flex-grow: 1;
@@ -112,10 +112,10 @@
 
 .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
 	transition: all 0.5s;
-	left: -50px;
+	left: -55px;
 	width: 55px;
 	z-index: 9;
-	border-right: 40px solid transparent;
+	border-right: 25px solid transparent;
 }
 .columns-area__panels__pane--navigational .navigation-panel {
 	border-right: 1px solid rgba(255,255,255,.15);
@@ -135,13 +135,23 @@
 .compose-form .autosuggest-input, 
 .compose-form .autosuggest-textarea, 
 .compose-form .spoiler-input,
-.compose-form .compose-form__buttons {
+.compose-form .compose-form__buttons,
+.compose-form .emoji-picker-dropdown,
+.emoji-picker-dropdown__menu,
+.compose-form .autosuggest-textarea__suggestions__item {
+	z-index: 998;
+}
+
+.compose-form .autosuggest-textarea__suggestions-wrapper,
+.compose-form .autosuggest-textarea__suggestions--visible {
 	z-index: 999;
 }
 
-.detailed-status__action-bar {
-	position: relative;
-	z-index: 99;
+/*这段其实不管用，先放着*/
+.detailed-status__action-bar,
+.detailed-status__button:first-child,
+.icon-button {
+	z-index: 9999;
 }
 
 }
