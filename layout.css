@@ -92,9 +92,8 @@
 }
 
 .columns-area__panels__main {
-	width: 100%;
 	flex-shrink: 1;
-	flex-grow: 1;
+	flex-grow: 100;
 }
 .columns-area__panels__pane--navigational {
 	width: 10px;
