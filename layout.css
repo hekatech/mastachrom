@@ -1,13 +1,13 @@
 .status {
-	padding: 1.5em 2em 1.5em 2.5em;
+	padding: 1.5em 2em 1.5em 6.2em;
 }
 
 .detailed-status {
-	padding: 1em 1.8em 1em 2.5em;
+	padding: 1.5em 2em 1em 2.3em;
 }
 
 .status__content__read-more-button {
-	font-size: 14px;
+	font-size: 12px;
 	padding: 14px 0 0;
 }
 
@@ -33,13 +33,13 @@
 .display-name__account,
 .notification__message, 
 .status__prepend {
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .notification__message, 
 .status__prepend {
-	margin-bottom: -6px;
-	padding-left: 2em;
+	margin-bottom: -10px;
+	padding-left: 55px;
 }
 
 .status__info {
@@ -47,7 +47,7 @@
 }
 
 .status__relative-time {
-	font-size: 14px;
+	font-size: 12px;
 	padding-top: 1px;
 }
 
@@ -58,4 +58,103 @@
 
 .link-footer {
 	font-size: 12px;
+}
+
+.status__avatar {
+	position: absolute;
+	left: 1.5em;
+	margin-top: 8px;
+}
+
+/*mobile*/
+
+@media screen and (max-width: 889px){
+
+.status {
+	padding: 1.5em 0.8em 1em 5.3em;
+}
+.detailed-status {
+	padding: 1.5em 0.8em 1em 2em;
+}
+
+.status__avatar {
+	position: absolute;
+	left: 0.8em;
+}
+.notification__message, 
+.status__prepend {
+	padding-left: 43px;
+}
+
+.ui__header,
+.ui__header__links {
+	flex-direction: row-reverse;
+}
+
+.columns-area__panels__main {
+	width: 100%;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+.columns-area__panels__pane--navigational {
+	width: 10px;
+	min-width: 0;
+	flex-shrink: 0;
+	flex-grow: 1;
+	transition: all 0.5s;
+	height: 100vh;
+	z-index: 99;
+}
+.columns-area__panels {
+	display: flex;
+	flex-direction: row-reverse;
+	box-sizing: border-box;
+}
+
+.columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
+	transition: all 0.5s;
+	left: -50px;
+	width: 55px;
+	z-index: 9;
+	border-right: 40px solid transparent;
+}
+.columns-area__panels__pane--navigational .navigation-panel {
+	border-right: 1px solid rgba(255,255,255,.15);
+}
+.columns-area__panels__pane--navigational:hover,
+.columns-area__panels__pane--navigational:active,
+.columns-area__panels__pane--navigational:focus {
+	width: 55px;
+}
+
+.columns-area__panels__pane--navigational:hover .columns-area__panels__pane__inner,
+.columns-area__panels__pane--navigational:active .columns-area__panels__pane__inner,
+.columns-area__panels__pane--navigational:focus .columns-area__panels__pane__inner {
+	left: 0;
+}
+
+.compose-form .autosuggest-input, 
+.compose-form .autosuggest-textarea, 
+.compose-form .spoiler-input,
+.compose-form .compose-form__buttons {
+	z-index: 999;
+}
+
+.detailed-status__action-bar {
+	position: relative;
+	z-index: 99;
+}
+
+}
+
+/*资料页*/
+
+.account__avatar img {
+	object-fit: cover;
+}
+.account__header__bar .avatar {
+	margin:0;
+}
+.account__header__tabs {
+	margin-top: -57px;
 }
